@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cardinal Curios</title>
+<link href="cardinal.css" rel="stylesheet" type="text/css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
+<div id="wrapper">
+  <div id="top">
+  	<div id="logo"><img src="Images/other banner.png" alt="" width="320" height="110"/></div>
+    <div id="menu">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tbody class="menu_table">
+			<tr>
+			  <td align="center"><a href="home.html">Home</a></td>
+			  <td align="center"><a href="projects.html">Projects</a></td>
+			  <td align="center"><a href="furniture.html">Furniture</a></td>
+			  <td align="center"><a href="ceramics.html">Ceramics</a></td>
+			  <td align="center"><a href="other.html">Other</a></td>
+			</tr>
+			<tr>
+		  	  <td align="center" colspan="5">Search: <input size="90%" type="search">&nbsp;<input name="go" type="submit" id="go" title="go" value="Search"></td>
+			 </tr>
+		  </tbody>
+		</table>
+    </div>
+  </div>
+  <div id="banner">
+  <!-- Container for the image gallery -->
+	<div class="container">
+		<p>Most Recently Added:</p>
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+      <img src="Images/oak dining chairs.jpg" alt="Oak Dining Chairs" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+      <img src="Images/two other chairs.jpg" alt="Desk Chair and Rocking Chair" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+      <img src="Images/wicker dining set.jpg" alt="Wicker Dining Set" style="width:100%">
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/oak dining chairs.jpg" style="width:100%" onclick="currentSlide(1)" alt="Oak Dining Chairs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/two other chairs.jpg" style="width:100%" onclick="currentSlide(2)" alt="Desk Chair and Rocking Chair">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/wicker dining set.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wicker Dining Set">
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="mid">
+  	<div id="main">
+  	  <h2>About Us</h2>
+      <div id="about_us">
+        <p>
+          After my mother moved out of her home, I had to take on the task of selling many of the items she had collected over all her decades of life. My daughter agreed to help me and so we started to catalogue all of the items and prepare them for sale. In the process, we realized we had some extra furniture that needed to be sold off as well, not to mention all the furniture projects that my daughter takes on for fun! With all of these items coming together, along with the restrictions of Covid-19, Cardinal Curios was born.
+        </p>
+        <p>We are currently based in Gurnee, Illinois. If you are out of state and would like one of our pieces, please feel free to contact us so we can figure something out as far as delivery! Please note that you will be in charge of paying the fees associated with this as we are not a delivery company.</p>
+        <p>If you have any other questions about our pieces, current or upcoming, let us know!</p>
+      </div>
+  	</div>
+    <div id="related">
+      <h2>Contact Us</h2>
+      <div id="contact_us">
+		  <p>Send us an e-mail at: <a href="cpullinger@yahoo.com">cpullinger@yahoo.com</a></p>
+		  <p>If you'd like to join our mailing list, please enter your information into the form below:</p>
+			<form action="http://" method="post" enctype="application/x-www-form-urlencoded" id="mailing">
+				<p>First Name: <input name="fname" type="text" id="fname" size="50"></p>
+			  	<p>Last Name: <input name="lname" type="text" id="lname" size="50"></p>
+				  <p>E-mail: <input name="e-mail" type="text" id="e-mail" size="56"></p>
+				  <p>Comments:<br>
+		      <textarea name="comments" cols="60" rows="7" class="html-text-box" title="Comments" placeholder="Please leave your comment here and click submit."></textarea></p>
+				  <p><input type="submit" value="Submit" class="html-text-box">
+				  <input type="reset" value="Reset" class="html-text-box"></p>
+		  	</form>
+      </div>
+    </div>
+  </div>
+  <div id="footer"><h5>Website and contents ©2021 Cardinal Curios unless otherwise stated.</h5></div>	
+</div>
+<script type="text/javascript" src="cardinal.js"></script>
+</body>
+</html>

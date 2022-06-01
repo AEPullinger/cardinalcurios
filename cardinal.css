@@ -1,0 +1,436 @@
+@charset "utf-8";
+body {
+    display: flex;
+    align-content: center;
+    font-family: Verdana, Tahoma, "Malgun Gothic", sans-serif;
+    font-size: 16px;
+	line-height: 1.6;
+	background-color:#8A0000;
+}
+#wrapper {
+    margin: 0 auto;
+    padding: 0px;
+    clear: left;
+    float: left;
+    width: 1200px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+	background-color: white;
+}
+#top {
+    clear: left;
+    width: 1196px;
+    height: 110px;
+    margin: 0px;
+    float: left;
+    background-color: #FFFFFF;
+    display: block;
+}
+#logo {
+    margin: 0px;
+    padding: 0px;
+    clear: left;
+    float: left;
+    width: 320px;
+}
+#menu {
+    float: right;
+    margin: 0px;
+    padding-left: 10px;
+    width: 826px;
+    height: 110px;
+    border-width: 0px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#banner {
+    margin: 0px;
+    padding: 0px;
+    clear: left;
+    float: left;
+    width: 1197px;
+    border-width: 0px;
+}
+#mid {
+	clear: left;
+	float: left;
+	width: 1200px;
+	text-align: center;
+}
+
+#main {
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    clear: left;
+    float: left;
+    width: 580px;
+	height: 100%;
+    border-width: 0px;
+}
+
+#main h2 {
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+#about_us {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+	width: 556px;
+	height: 535px;
+	margin: 0 auto;
+    padding: 10px;
+	text-align: left;
+	background-color: #EBEBEB;
+}
+
+#related {
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    float: right;
+    width: 580px;
+	height: 100%;
+}
+
+#related h2 {
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+#contact_us {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+	width: 556px;
+	height: 535px;;
+	margin: 0 auto;
+    padding: 10px;
+	background-color: #EBEBEB;
+	text-align: left;
+}
+
+textarea.html-text-box {
+    border-width: 1;
+    border-style: solid;
+    border-color: #cccccc;
+    color: #000000;
+	text-align: left;
+}
+input.html-text-box {
+	background-color:#ffffff;
+	color:#000000;
+	margin-left: 120px;
+	width: 100px;
+	height: 30px;
+}
+
+#mailing {
+	text-align: left;
+	padding: 10px;
+}
+
+#footer {
+    margin: 0px;
+    padding: 0px;
+    clear: left;
+    float: left;
+    width: 1200px;
+    border-width: 0px;
+	text-align: center;
+}
+
+.menu_table {
+    align-content: center;
+    height: 110px;
+	padding-left: 10px;
+}
+
+.menu_table tr td {
+    width: 20%;
+	height: 100%;
+}
+
+.menu_table tr td a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu_table tr td a:hover {
+	color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: large;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#title{
+	width: 1200px;
+	float: left;
+	clear: left;
+	text-align: center;
+	display: inline-flex;
+}
+
+#innertitle {
+    clear: left;
+    float: left;
+    padding: 5px;
+	margin-top: 10px;
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+#project {
+    margin: 10px;
+    clear: left;
+	float: left;
+    width: 1176px;
+	display: inline-block;
+	border: solid black 2px;
+	position: relative;
+	background-color: #EBEBEB;
+}
+
+#projectinfo {
+    clear: left;
+	float: left;
+    padding: 5px;
+    width: 746px;
+    margin: 5px;
+}
+
+#projectpicture{
+	float: right;
+	clear: right;
+	padding: 0px;
+	margin-left: 10px;
+}
+
+.project-img {	
+	float: right;
+	padding: 10px;
+    height: 100%;
+	background-color: black;
+}
+#project #projectinfo h2 {
+    text-align: center;
+}	
+
+#furnituretop {
+	text-align: center;
+	float: left;
+	display: inline-flex;
+	margin: 0px 12px;
+}
+
+#furnituretopinfo {
+	text-align: left;
+	float: left;
+	clear: left;
+	width: 566px;
+	height: 170px;
+	padding: 5px;
+	margin: 10px;
+	border: solid black 2px;
+	position: relative;
+	background-color: #EBEBEB;
+}
+
+#furniturelist {
+	text-align: left;
+	float: left;
+	width: 566px;
+	height: 170px;
+	padding: 5px;
+	margin: 10px;
+	border: solid black 2px;
+	position: relative;
+	background-color: #EBEBEB;
+}
+
+#furnituremain {
+	float: left;
+	width: 1166px;
+	margin: 0px 12px;
+}
+
+.furniture-box {
+	margin: 10px;
+	float: left;
+    width: 1152px;
+	display: inline-block;
+	border: solid black 2px;
+	position: relative;
+	background-color: #EBEBEB;
+}
+
+.furniture-info {
+	clear: left;
+	float: left;
+    padding: 5px;
+    width: 346px;
+    margin: 5px;
+}
+
+.furniture-image {
+	float: right;
+	padding: 10px;
+    height: 100%;
+	background-color: black;
+}
+
+.furniture-img-box {
+	float: right;
+	clear: right;
+	padding: 0px;
+	margin-left: 10px;
+	text-align: center;
+	display: inline-flex;
+}
+
+#sheet-info {
+	float: left;
+	margin: 20px 50px;
+	border: solid black 2px;
+	background-color: #EBEBEB;
+}
+
+#other {
+	width: 1100px;
+	float: left;
+	clear: left;
+	text-align: center;
+	margin: 0px 50px 0px 50px;
+}
+
+#oops {
+	float: left;
+	width: 1000px;
+	margin: 10px 50px 10px 50px;
+	border: solid black 2px;
+	background-color: #EBEBEB;
+}
+#other p iframe {
+    border: 2px solid #000000;
+}
+
+#furniturelist ul li{
+    padding: 2px 0px;
+    list-style-type: none;
+    list-style-image: url(Images/small_arrow.gif);
+}
+#furniturelist ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+#furniturelist ul li a:hover {
+	color: red;
+}
